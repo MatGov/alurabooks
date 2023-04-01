@@ -1,0 +1,135 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo, .contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    background: url(../img/Email.svg) no-repeat;
+    padding-left: 2em;
+}
+
+hr {
+    margin: 0;
+}
+
+.credito {
+    padding: 1em;
+    background-color: var(--cinza);
+    text-align: center;
+}
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 0;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+
+    .credito {
+        padding: 1em 0;
+        background-color: var(--cinza);
+        text-align: center;
+    }
+
+    .rodape {
+        display: flex;
+        background-color: var(--cinza);
+        justify-content: space-around;
+        padding: 2em;
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .lista-rodape__titulo {
+        padding: 1em 0 1em 0;
+        font-size: 14px;
+        color: var(--cinza-terciario);
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        padding: .5em;
+    }
+
+    .lista-rodape__link {
+        color: var(--cinza-secundario);
+        text-decoration: none;
+        padding: 0 .5em;
+    }
+
+    .lista-rodape__item:hover {
+        background-color: var(--cinza-terciario);
+        width: 100%;
+    }
+
+    .lista-rodape__item:hover > .lista-rodape__link {
+        color:  var(--branco);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 4em 25vw;
+    }
+
+    .credito {
+        font-size: 24px;
+    }
+
+    .lista-rodape {
+        border-left: 1px solid var(--cinza-terciario);
+        padding-left: 2em;
+    }
+
+    .lista-rodape__titulo {
+        font-size: 24px;
+    }
+}
